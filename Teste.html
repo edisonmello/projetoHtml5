@@ -1,9 +1,161 @@
+<!DOCTYPE html>
 <html>
 <head>
-    <title>
-        <body>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Linx Porto Alegre</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <!-- <script src="main.js"></script> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <style>
+            button {
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            }
+            #divDesfazer {
+                background-color: purple;
+            }
+            div {
+                font-family: 'Wendy One', sans-serif;
+            }
+            div:hover {
+                background-color: yellow;
+            }
+            .col {
+                background-color: lightcoral;
+            }
             
-        </body>
-    </title>
-</head>
+        </style>
+        <script>
+            function teste(){
+                var clientes = [
+                    {nome: "Pletsch", saldo: 3000000000, conta: 1000},
+                    {nome: "Perfeito", saldo: 500, conta: 200}
+                ];
+                for(var i = 0; i < clientes.length; i++ ){
+                    (function(cliente){
+                        setTimeout (function(){
+                            processarContas(clientes[i]);
+                        }, 3000);
+                    })(clientes[i]);                        
+                }
+                for(let i = 0; i < clientes.length; i++ ){
+                    setTimeout (function(){
+                        processarContas(clientes[i]);
+                    }, 3000);                     
+                }
+                console.log(a);
+                console.log(b);
+            }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-md-4 col-lg-2 offset-lg-4" id="divDesfazer">
+                    <button class="btn col" style="opacity: 0.1;">Desfazer</button>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 order-4" title="Salva o processo-">
+                    <button class="btn col">Salvar</button>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2 order-4">
+                        <button class="col btn btn-primary" style=" font-family: 'Wendy One', sans-serif;">привет</button>
+                    </div>
+                <div class="col-12 col-md-4 col-lg-4 order-1" style="background-color: burlywood">
+                    <a>Esqueceu sua senha clique aqui para recuperar</a>
+                </div>
+            </div>
+        </div>
+        <div class="shadow-none p-3 mb-5 bg-light rounded">No shadow</div>
+<div class="shadow-sm p-3 mb-5 bg-white rounded">Small shadow</div>
+<div class="shadow p-3 mb-5 bg-white rounded">Regular shadow</div>
+<div class="shadow-lg p-3 mb-5 bg-white rounded">Larger shadow</div>
+        <div style="color: red">Linx software que move o <span  style="font-weight: bold; color: pink">varejo</span></div><div>Totvs</div>
+        <input type="text" placeholder="Texto" />
+        <input type="number" placeholder="N&uacute;mero" />
+        <input type="datetime-local" />
+        <input type="color" />
+        <input type="range" />
+        <label><input type="checkbox" />Marcar</label>
+        <fieldset>
+            <legend>Escolha</legend>
+            <input type="radio" name="dfhjsdg" id="rndSim" /> 
+            <label for="rndSim">Sim</label> 
+            <label><input type="radio" name="dfhjsdg"  />Não</label>
+        </fieldset>
+        <form action="https://google.com" method="GET">
+            <input type="tel" placeholder="Tel" name="Telefone" />
+            <input type="email" placeholder="E-mail" name="email" />
+            <input type="search" placeholder="Pesquisa" />
+            <input type="url" placeholder="Url" />
+            <input type="button" value="Clique aqui" />
+            <textarea>
+
+            </textarea>
+            <input type="submit" value="Enviar" />
+        </form>
+        <select>
+            <option>Sim</option>
+            <option>Não</option>
+        </select>
+        <button>
+            Clique aqui<br/>
+            Eu
+        </button>
+        <ol start="100">
+            <li>Centésimo</li>
+            <li>Centésimo primeiro</li>
+            <li>Centésimo segundo</li>
+        </ol>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+        <!--  
+        <iframe src="http://clicrbs.com.br" height="1500px" width="1000px">
+        </iframe>-->
+        <table border="2">
+            <thead>
+                <tr>
+                    <th>Nº</th>
+                    <th>Nome</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Neymar Pletsch</td>
+                </tr>
+                <tr>
+                    <td colspan="2">1</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">3</td>
+                    <td>Grêmio</td>
+                </tr>
+                <tr>
+                    <td>Internacional</td>
+                </tr>
+            </tbody>
+        </table>
+        <img src="brazil.png" />
+        <a href="http://google.com">Google</a>
+        <h1>H1</h1>
+        <h3>H3</h3>
+        <h6>H6</h6>
+        <hr/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+
+    </body>
 </html>
